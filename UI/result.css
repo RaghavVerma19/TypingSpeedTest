@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #1e1e2f, #292943);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.result-container {
+  text-align: center;
+  background-color: #1c1c2e;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  max-width: 600px;
+}
+
+.result-container h1 {
+  color: #00e0ff;
+  margin-bottom: 30px;
+}
+
+.result-card {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.result-item {
+  background-color: #292943;
+  padding: 20px;
+  border-radius: 12px;
+  width: 100px;
+  margin: 10px;
+}
+
+.result-item h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #cccccc;
+}
+
+.result-item p {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0 0;
+  color: #00ff88;
+}
+
+.retake-btn {
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #00e0ff;
+  border: none;
+  border-radius: 8px;
+  color: #000;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.retake-btn:hover {
+  background-color: #00b3cc;
+}
