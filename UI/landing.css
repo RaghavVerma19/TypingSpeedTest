@@ -1,3 +1,4 @@
+/* —————————————— Base Styles (unchanged) —————————————— */
 body {
     margin: 0;
     padding: 0;
@@ -19,8 +20,7 @@ body {
     max-width: 1000px;
     padding: 40px;
     border-radius: 20px;
-    background-color: #1c1c2e;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    gap: 30px;
 }
 
 .text-content {
@@ -28,7 +28,6 @@ body {
     flex-direction: column;
     align-items: center;
     flex: 1;
-    padding-right: 40px;
 }
 
 .text-content h1 {
@@ -44,7 +43,8 @@ body {
     color: #cccccc;
 }
 
-.start-btn {
+.start-btn,
+.retake-btn {
     padding: 15px 30px;
     font-size: 16px;
     background-color: #00e0ff;
@@ -55,16 +55,113 @@ body {
     transition: background 0.3s ease;
 }
 
-.start-btn:hover {
+.start-btn:hover,
+.retake-btn:hover {
     background-color: #00b3cc;
 }
 
-/* .image-content {
-    flex: 1;
-    text-align: center;
+/* —————————————— Test & Result Containers —————————————— */
+.container {
+    padding: 30px;
+    width: 100%;
+    height: 60vh;
+    max-width: 600px;
+    display: none;
 }
 
-.image-content img {
-    max-width: 100%;
-    height: auto;
-} */
+.words::-webkit-scrollbar {
+    display: none;
+}
+
+.result-container {
+    text-align: center;
+    padding: 40px;
+    width: 90%;
+    max-width: 600px;
+    display: none;
+}
+
+/* —————————————— Results Card —————————————— */
+.result-card {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.result-item {
+    background-color: #292943;
+    padding: 20px;
+    border-radius: 12px;
+    width: 100px;
+    margin: 10px;
+}
+
+.result-item h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #cccccc;
+}
+
+.result-item p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0 0;
+    color: #00ff88;
+}
+
+/* —————————————— Typing Test Words & Input —————————————— */
+.words {
+    padding: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    max-height: 40vh;
+    overflow-y: auto;
+}
+
+/* each word is a span so we can highlight it */
+.words span {
+    padding-right: 5px;
+}
+
+/* highlight the active word */
+.words span.current-word {
+    background-color: rgba(0, 224, 255, 0.2);
+    border-radius: 4px;
+}
+
+/* optional: style correct/incorrect if you extend the script later */
+
+
+.words span.incorrect {
+    color: #ff4c4c;
+}
+
+.words span.correct {
+    color: #00ff88 !important;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 15px;
+    outline: none;
+    background: linear-gradient(to right, #1e1e2f, #292943);
+    color: white;
+    display: none;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+#timer,
+#wpm {
+    font-weight: bold;
+}

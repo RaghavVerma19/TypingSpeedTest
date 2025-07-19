@@ -1,21 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Typing Speed Test</title>
   <link rel="stylesheet" href="landing.css" />
 </head>
+
 <body>
   <div class="landing-container">
     <div class="text-content">
       <h1>Typing Speed Test</h1>
       <p>Test your typing speed and accuracy in real-time.<br> Improve your skills and compete with friends!</p>
       <button class="start-btn">Start Typing Test</button>
+      <div class="container">
+        <div id="words" class="words"></div>
+        <input type="text" id="input" placeholder="" autocomplete="off" />
+        <div class="stats">
+          <span id="timer">Time: 0s</span>
+          <span id="wpm">WPM: 0</span>
+        </div>
+      </div>
     </div>
     <!-- <div class="image-content">
       <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Typing Illustration">
     </div>
   </div> -->
+
+
+    <div class="result-container">
+      <h1>Test Completed 🎉</h1>
+
+      <div class="result-card">
+        <div class="result-item">
+          <h2>WPM</h2>
+          <p>72</p>
+        </div>
+        <div class="result-item">
+          <h2>Accuracy</h2>
+          <p>95%</p>
+        </div>
+        <div class="result-item">
+          <h2>Time</h2>
+          <p>60s</p>
+        </div>
+        <button class="retake-btn">Retake Test</button>
+
+      </div>
+
+      <script src="../scripts/script.js"></script>
 </body>
+
 </html>
