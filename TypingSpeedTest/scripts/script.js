@@ -6,7 +6,6 @@ const timerSpan = document.getElementById("timer");
 const wpmSpan = document.getElementById("wpm");
 const retakeBtn = document.getElementsByClassName("retake-btn")[0];
 
-// make sure this matches everywhere below!
 const typingContent = [
   "Beneath a satin sky, the river flows with quiet purpose, carrying moonlight like silver coins upon its rippling surface. Trees lean forward to listen as the water hums its ancient lullaby, and the scent of wet earth rises in gentle plumes. Somewhere downstream, a heron stands motionless, its feathers catching the pale glow, as if spellbound by the night’s soft conversation. Time seems to pause here, wrapped in the hush of willow branches and distant stars.",
   "In a sun‑kissed meadow, wildflowers nod in unison to a breeze that knows all their secrets. Petals of lavender, gold, and rose vibrate in a silent song, weaving patterns of color that shimmer under the afternoon light. Bees drift lazily from bloom to bloom, their wings like tiny bells marking the pulse of summer’s heart. The world feels boundless in this gentle expanse, a sanctuary where every breath tastes of warmth and possibility.",
