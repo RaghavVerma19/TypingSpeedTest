@@ -26,7 +26,7 @@ A sleek and interactive website that allows users to test and improve their typi
 
 ## Demo
 
-([https://your-live-site-link.com](https://typing-speed-test-cyan.vercel.app/))  
+([Open the Link](https://typing-speed-test-cyan.vercel.app/))  
 
 ---
 
